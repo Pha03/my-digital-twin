@@ -27,6 +27,9 @@ client = OpenAI()
 #-----------------------------------------
 # Document
 #-----------------------------------------
+import sys
+# On Render, private_documents.py is uploaded as a Secret File and mounted here
+sys.path.append("/etc/secrets")
 from private_documents import (
     document_overview,
     document_education,
