@@ -65,7 +65,7 @@ document_interests = """..."""
 system_message = """..."""
 ```
 
-Optionally, put an avatar image named `Pooja.JPG` next to `app.py` to show it in the chat.
+Optionally, put an avatar image named `my_photo.JPG` next to `app.py` to show it in the chat.
 
 ## Run
 
