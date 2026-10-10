@@ -1,0 +1,10 @@
+.env
+chroma-db*/
+chroma_db*/
+ai_env/
+__pycache__/
+*.pyc
+
+
+# Personal documents (kept local)
+private_documents.py
