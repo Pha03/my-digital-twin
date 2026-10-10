@@ -313,7 +313,7 @@ def respond_ai(message, history):
 # Launch Gradio
 #-----------------------------------------
 port = int(os.environ.get("PORT", 7860))
-avatar = "Pooja.JPG" if os.path.exists("Pooja.JPG") else None
+avatar = "my_photo.JPG" if os.path.exists("my_photo.JPG") else None
 gr.ChatInterface(fn=respond_ai,
                  title="Pooja's Digital Twin",
                  chatbot=gr.Chatbot(avatar_images=(None, avatar)),
