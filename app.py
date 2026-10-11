@@ -320,6 +320,6 @@ gr.ChatInterface(fn=respond_ai,
                  chatbot=gr.Chatbot(avatar_images=(None, avatar), height=550),
                  description="Chat with an AI version of Pooja Hari Ambrish. Ask about her education, experience, skills, interests or just say Hi.\n\n"
                              "*This is an AI assistant built by Pooja. Like any AI, it may occasionally make small mistakes. "
-                             "Please verify important details, and feel free to reach out to Pooja directly for more information.*",
+                             "Feel free to reach out to Pooja directly for more information.*",
                  examples=["Hi there!","What's your educational background?", "Tell me about your professional experience",  "What are you learning right now?", "What are your hobbies?"]
                  ).launch(inbrowser=True,server_name="0.0.0.0",server_port=port)
