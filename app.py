@@ -316,8 +316,8 @@ port = int(os.environ.get("PORT", 7860))
 # Avatar: a hosted image (AVATAR_URL, used on Render) or a local file
 avatar = os.getenv("AVATAR_URL") or ("my_photo.JPG" if os.path.exists("my_photo.JPG") else None)
 gr.ChatInterface(fn=respond_ai,
-                 title="Pooja's Digital Twin",
-                 chatbot=gr.Chatbot(avatar_images=(None, avatar)),
-                 description="Chat with an AI version of Pooja Hari Ambrish. Ask about her education, experience, skills, projects, interests or just say Hi",
+                 title="Meet Pooja's Digital Twin",
+                 chatbot=gr.Chatbot(avatar_images=(None, avatar), height=550),
+                 description="An AI version of Pooja Hari Ambrish, here to chat about her background, projects, and skills. Ask a question or pick one below.",
                  examples=["Hi there!","What's your educational background?", "Tell me about your professional experience", "What are your technical skills?", "What are you learning right now?", "What do you do for fun?"]
-                 ).launch(inbrowser=True,server_name="0.0.0.0",server_port=port)
+                 ).launch(inbrowser=True,server_name="0.0.0.0",server_port=port,theme=gr.themes.Soft())
